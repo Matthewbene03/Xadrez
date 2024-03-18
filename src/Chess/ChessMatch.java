@@ -16,6 +16,7 @@ public class ChessMatch {
     
     public ChessMatch() {
         this.board = new Board(8,8);
+        this.initialSetup();
     }
 
     public ChessMatch(Integer turn, Color currentPlayer, boolean check, ChessPiece enPassantVulnerable,

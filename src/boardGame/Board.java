@@ -36,7 +36,8 @@ public class Board {
     }
 
     public void placePiece(Piece piece, Posicao posicao){
-
+        this.pieces[posicao.getLinha()][posicao.getColuna()] = piece;
+        piece.posicao = posicao;
     }
 
     public Piece removePiece (Posicao posicao){
