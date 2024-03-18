@@ -29,4 +29,8 @@ public class ChessPiece extends Piece{
     protected void decreaseMoveCout(){
 
     }
+
+    public Color getColor() {
+        return color;
+    }
 }

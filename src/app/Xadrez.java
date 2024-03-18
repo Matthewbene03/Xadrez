@@ -1,11 +1,11 @@
 package app;
 
-import boardGame.Posicao;
+import Chess.ChessMatch;
 
 public class Xadrez {
 
     public static void main(String[] args) {
-        Posicao p = new Posicao(1,1);
-        System.out.println(p);
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
     }
 }
