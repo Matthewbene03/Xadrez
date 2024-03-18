@@ -6,6 +6,9 @@ public class Board {
     private Piece[][] pieces;
 
     public Board (Integer linhas, Integer colunas){
+        if(linhas < 1 || colunas < 1){
+            throw new BoardException("");
+        }
         this. linhas = linhas;
         this.colunas = colunas;
         this.pieces = new Piece[linhas][colunas];
@@ -15,16 +18,8 @@ public class Board {
         return linhas;
     }
 
-    public void setLinhas(Integer linhas) {
-        this.linhas = linhas;
-    }
-
     public Integer getColunas() {
         return colunas;
-    }
-
-    public void setColunas(Integer colunas) {
-        this.colunas = colunas;
     }
 
     public Piece piece (Integer linha, Integer coluna){
