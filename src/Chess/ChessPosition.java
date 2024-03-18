@@ -6,9 +6,9 @@ public class ChessPosition {
     private char coluna;
     private Integer linha;
     public ChessPosition(char coluna, Integer linha) {
-        if(this.coluna < 'a' || this.coluna > 'h' || this.linha < 1 || this.linha > 8){
-            throw new ChessException("Error instantiating ChessPosition. Valid values are from a1 to h8.");
-        }
+//        if(this.coluna < 'a' || this.coluna > 'h' || this.linha < 1 || this.linha > 8){
+  //          throw new ChessException("Error instantiating ChessPosition. Valid values are from a1 to h8.");
+    //    }
         this.coluna = coluna;
         this.linha = linha;
     }
