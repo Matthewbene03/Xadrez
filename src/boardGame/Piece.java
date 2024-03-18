@@ -13,14 +13,16 @@ public class Piece {
         return;
     }*/
 
-    protected Board getBoard (){
-        return this.board;
-    }
+
     public boolean possibleMove(Posicao posicao){
         return false;
     }
 
     public boolean isThereAnyPossibleMove(){
         return false;
+    }
+
+    protected Board getBoard (){
+        return this.board;
     }
 }

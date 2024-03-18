@@ -26,4 +26,28 @@ public class Board {
     public void setColunas(Integer colunas) {
         this.colunas = colunas;
     }
+
+    public Piece piece (Integer linha, Integer coluna){
+        return pieces[linha][coluna];
+    }
+
+    public Piece piece (Posicao posicao){
+        return this.pieces[posicao.getLinha()][posicao.getColuna()];
+    }
+
+    public void placePiece(Piece piece, Posicao posicao){
+
+    }
+
+    public Piece removePiece (Posicao posicao){
+        return this.pieces[posicao.getLinha()][posicao.getColuna()];
+    }
+
+    public boolean positionExists (Posicao posicao){
+        return false;
+    }
+
+    public boolean therelsAPiece (Posicao posicao){
+        return false;
+    }
 }
