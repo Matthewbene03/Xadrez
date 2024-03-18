@@ -1,6 +1,7 @@
 package Chess;
 
 import boardGame.Board;
+import boardGame.Posicao;
 
 public class ChessMatch {
     private Integer turn;
@@ -47,5 +48,9 @@ public class ChessMatch {
 
     public ChessPiece replacePromotedPiece(String type){
         return null;
+    }
+
+    private void initialSetup(){
+        board.placePiece(new King(board, Color.WHITE), new Posicao(0,1));
     }
 }
