@@ -9,10 +9,13 @@ public class Piece {
         this.board = board;
     }
 
-    public Piece[][] possibleMoves(){
+    /*public Piece[][] possibleMoves(){
         return;
-    }
+    }*/
 
+    protected Board getBoard (){
+        return this.board;
+    }
     public boolean possibleMove(Posicao posicao){
         return false;
     }
